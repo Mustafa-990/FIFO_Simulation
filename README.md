@@ -3,8 +3,6 @@ Implementation of FIFO in a Java program
 
 Project Instructions:
 
-Project Instructions:
-
 Create a program that implements FIFO. Your simulation will randomly generate processes to test your policy. You MUST include the following constants: • CHANCE_OF_ARRIVAL: This percentage represents the chance that a job will arrive in a particular second. • MIN_TIME: This number represents the minimum time a new process can take. • MAX_TIME: This number represents the maximum time a new process can take. • END_TIME: This number represents the ending time for the simulation. • TIME_QUANTUM: This number represents the time quantum for the algorithm. It is not necessary for algorithms that do not require a time quantum.
 
 These constants must be clearly defined and named in this manner, and easily found in your code. The point is that they can be easily changed to modify the simulation. I will modify them when testing your code. Each second in the simulation, you should generate a random number (between 0 and 99) and check it against CHANCE_OF_ARRIVAL to see if a new process arrives. If it does, you should randomly generate its running time (so it is between the minimum and maximum, using the appropriate constants), and add it to the ready processes. The CPU should execute the currently running process for 1 second, and (depending on the algorithm), decide to switch processes. Continue this process until the end time is reached.
